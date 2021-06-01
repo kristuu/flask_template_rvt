@@ -1,0 +1,117 @@
+html {
+  width: 100%;
+}
+
+header {
+  background-color: #004f2d;
+  height: 300px;
+  background-position: 0%;
+  padding: 10px;
+}
+
+#galvene {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#nosaukums {
+  position: relative;
+  font-family: "Josefin Sans";
+  color: white;
+  font-weight: 700px;
+  font-size: 36px;
+  line-height: 55px;
+  margin: 0px;
+}
+
+#poga1 {
+  position: relative;
+  font-family: "Josefin Sans";
+  color: white;
+  font-weight: 100;
+  font-size: 22px;
+  line-height: 36px;
+  letter-spacing: 0.185cm;
+  margin: 0px 30px;
+  height: 50px;
+  background: transparent;
+  border: 0px;
+}
+
+section {
+  float: left;
+  width: 30%;
+  height: 300px;
+}
+
+#mape {
+  display: inline-block;
+  margin-top: -30%;
+  padding-left: 10%;
+}
+
+#atrasanas-vieta {
+  margin-top: 2%;
+  font-size: 26px;
+  text-decoration: underline;
+  padding-left: 10%;
+  height: 10px;
+}
+
+#adrese {
+  margin-top: 1%;
+  font-size: 18px;
+  padding-left: 10%;
+  height: 8px;
+}
+
+#post-code {
+  padding-left: 10%;
+  margin-top: 0%;
+  font-size: 18px;
+}
+
+aside {
+  float: right;
+  width: 70%;
+}
+
+#teksts {
+  margin-top: -10%;
+  background-color: #007643;
+  top: 1%;
+  padding: 25px;
+  color: white;
+  background-color: #007643;
+  font-size: 24px;
+  width: 360px;
+  height: 140px;
+  font-size: 24px;
+  margin-left: 300px;
+}
+
+#info {
+  margin-left: 700px;
+  margin-top: 100px;
+}
+
+#kontakti {
+  text-decoration: underline;
+  font-size: 24px;
+}
+
+#epasts {
+  font-size: 18px;
+  margin-top: -1.5%;
+}
+
+#tel-nr {
+  font-size: 18px;
+  margin-top: -1%;
+}
+
+#fakss {
+  font-size: 18px;
+  margin-top: -1%;
+}

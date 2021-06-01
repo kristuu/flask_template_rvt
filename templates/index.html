@@ -1,19 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="lv">
   <head>
-    <link href="static/css/style.css" rel="stylesheet">
-    <title>Your Site</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auto noma - NOMAUTO</title>
+    <link rel="stylesheet" href="../../static/css/index.css" />
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="#" class="active">HOME</a></li>
-        <li><a href="./about">ABOUT</a></li>
-        <li><a href="./kontakti">KONTAKTI</a></li>
-      </ul>
-    </nav>
-    <h1>Flask Site Template</h1>
-    <h2>Just a Template!</h2>
+    <header>
+      <button id="poga1">meklēšana</button>
+      <p id="nosaukums">NOMAUTO</p>
+      <button id="poga1">rezervācija</button>
+    </header>
+    <div id="cukurins">
+      <img
+        id="attels"
+        src="../../static/img/cukurins.png"
+        width="360px"
+        height="440px"
+        alt="Cukuriņš stock photo"
+      />
+    </div>
+    <div id="footerhp">
+      <div id="mekpecrek">
+        <div id="mekpecrekvirsraksts">Meklēšana pēc rekvizītiem</div>
+        <div id="meklesanasievade">
+          <span>FILTRĒT:</span>
+          <select name="izvelerek" id="izvelerek">
+            <option value="Nomas punkts">Nomas punkts</option>
+            <option value="Marka">Marka</option>
+            <option value="Klase">Klase</option>
+            <option value="Pieejamība">Pieejamie datumi</option>
+          </select>
+          <select name="meklesanarek" id="meklesanarek">
+            <option value="Nomas punkts"></option>
+            <option value="Marka">Brīvības gatve 290, Rīga</option>
+            <option value="Klase">Tērbatas iela 13, Rīga</option>
+            <option value="Pieejamība">Mazā stacijas iela 9B, Dzintari</option>
+          </select>
+          <button id="mekletpoga">MEKLĒT</button>
+        </div>
+      </div>
+    </div>
   </body>
-  <script src="static/js/script.js"></script>
 </html>

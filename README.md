@@ -1,2 +1,5 @@
-# Flask template
-> **Autors:** Kristiāns Artis Bērziņš
+# NOMAUTO
+## Autori: 
+- Kristiāns Artis Bērziņš
+- Katrīna Gandzjuka
+- Ilona Grebņova 

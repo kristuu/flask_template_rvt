@@ -1,0 +1,122 @@
+@font-face {
+  font-family: Cabin;
+  src: url("/fonts/cabin.ttf");
+}
+@font-face {
+  font-family: Josefin Sans;
+  src: url("/fonts/josefinsans.ttf");
+}
+@font-face {
+  font-family: Rubik;
+  src: url("/fonts/rubik.ttf");
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 1em 0 3em 0;
+}
+
+#poga1 {
+  position: relative;
+  font-family: "Josefin Sans";
+  color: #0e402d;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 36px;
+  letter-spacing: 0.185cm;
+  margin: 0px 30px;
+  height: 50px;
+  background: transparent;
+  border: 0px;
+}
+
+#nosaukums {
+  position: relative;
+  font-family: "Josefin Sans";
+  color: #0e402d;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 55px;
+  margin: 0px;
+}
+
+#cukurins {
+  height: 15%;
+  text-align: center;
+  margin: 40px 0 125px 0;
+}
+
+#attels {
+  border-radius: 200px;
+  opacity: 0.85;
+}
+
+#footerhp {
+  align-items: center;
+  justify-content: center;
+  font-family: Rubik;
+}
+
+#mekpecrek {
+  display: flex;
+  background-color: #004f2d;
+  margin: 0 10%;
+  text-align: center;
+  width: 80%;
+  height: 200px;
+  flex-direction: column;
+}
+
+#meklesanasievade {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mekpecrekvirsraksts {
+  padding: 25px 0 50px 0;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 30px;
+  align-items: center;
+}
+
+#meklesanarek {
+  width: 35%;
+  height: 35px;
+  border: none;
+  padding-left: 15px;
+  padding-right: 10px;
+  margin-right: 0.3em;
+}
+
+#izvelerek {
+  width: 15%;
+  height: 37px;
+  border: none;
+  padding-left: 15px;
+  padding-right: 10px;
+  margin-right: 0.5em;
+}
+
+#meklesanarek,
+#izvelerek {
+  font-family: Rubik;
+}
+
+#meklesanarek:focus,
+#izvelerek:focus {
+  outline: none;
+}
+
+#mekletpoga {
+  background-color: #e0dddd;
+  outline: none;
+  border: none;
+  height: 37px;
+  width: 200px;
+  font-family: Rubik;
+  font-size: 20px;
+}
