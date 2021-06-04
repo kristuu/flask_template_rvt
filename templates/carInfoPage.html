@@ -5,37 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mercedes Benz XYZ - NOMAUTO</title>
-    <link rel="stylesheet" href="../../static/css/carInfoPage.css" />
+    <link rel="stylesheet" href="../static/css/carInfoPage.css" />
   </head>
   <body>
     <header>
-      <button id="poga1">meklēšana</button>
-      <p id="nosaukums">NOMAUTO</p>
-      <button id="poga1">rezervācija</button>
+      <button class="headerButton" href="#">auto klāsts</button>
+      <div id="company">
+        <a id="companyTitle" href="">NOMAUTO</a>
+        <a id="aboutUs" href="about">par mums</a>
+      </div>
+      <button class="headerButton" href="#">nomas punkti</button>
     </header>
-    <section>
-      <div id="teksts">
-        <h1>Etiam nisi erat</h1>
-        <p>
-          Etiam nisi erat, blandit in lectus ut, consequat tincidunt tellus.
-          Suspendisse hendrerit eleifend ex quis rutrum. Aliquam accumsan lorem
-          ut est lacinia, ac vestibulum risus rutrum. Suspendisse commodo
-          aliquet congue. Praesent eros justo, dignissim posuere cursus in,
-          pretium maximus erat. Proin ut eros turpis. Nam luctus, dui a
-          tincidunt sagittis, dolor quam porta ligula, id semper nisi turpis eu
-          quam.
-        </p>
+    <div id="middle">
+      <section>
+        <div id="teksts">
+          <h1>Etiam nisi erat</h1>
+          <p>
+            Etiam nisi erat, blandit in lectus ut, consequat tincidunt tellus.
+            Suspendisse hendrerit eleifend ex quis rutrum. Aliquam accumsan
+            lorem ut est lacinia, ac vestibulum risus rutrum. Suspendisse
+            commodo aliquet congue. Praesent eros justo, dignissim posuere
+            cursus in, pretium maximus erat. Proin ut eros turpis. Nam luctus,
+            dui a tincidunt sagittis, dolor quam porta ligula, id semper nisi
+            turpis eu quam.
+          </p>
+          <h2>Detaļas</h2>
+          <div id="contentTable">
+            <table>
+              <tbody>
+                <tr>
+                  <th>Nomas punkts</th>
+                  <td id="rentPoint">PeterAuto</td>
+                </tr>
+                <tr>
+                  <th>Marka</th>
+                  <td id="carBrand">Mercedes Benz</td>
+                </tr>
+                <tr>
+                  <th>Modelis</th>
+                  <td id="model">XYZ</td>
+                </tr>
+                <tr>
+                  <th>Gads</th>
+                  <td id="year">XYZW</td>
+                </tr>
+                <tr>
+                  <th>Cena (€ / viena pilna diena)</th>
+                  <td id="price">€ XY,-</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
         <button id="reservation-button">rezervēt</button>
-      </div>
-    </section>
-    <aside>
-      <div id="attels">
-        <img
-          src="../../static/img/reservation-page-foto.png"
-          width="640px"
-          height="500px"
-        />
-      </div>
-    </aside>
+      </section>
+      <aside>
+        <div id="attels">
+          <img
+            src="../static/img/reservation-page-foto.png"
+            width="640px"
+            height="500px"
+          />
+        </div>
+      </aside>
+    </div>
   </body>
 </html>

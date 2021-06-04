@@ -25,6 +25,8 @@ header {
 }
 
 .headerButton {
+  height: 60px;
+  width: 175px;
   border: none;
   font-family: "Josefin Sans";
   background: none;
@@ -128,7 +130,7 @@ div#buttons {
   font-size: 0;
 }
 
-button {
+#buttons button {
   height: 60px;
   width: 175px;
   margin: 0;

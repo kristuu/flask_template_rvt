@@ -14,9 +14,12 @@ header {
   position: fixed;
   justify-content: center;
   width: 100%;
+  align-items: center;
 }
 
 .headerButton {
+  height: 60px;
+  width: 175px;
   border: none;
   font-family: "Josefin Sans";
   background: none;
