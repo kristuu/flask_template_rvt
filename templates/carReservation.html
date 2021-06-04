@@ -5,34 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NOMAUTO - Auto rezervācija</title>
-    <link rel="stylesheet" href="../../static/css/carReservation.css" />
+    <link rel="stylesheet" href="../static/css/carReservation.css" />
   </head>
   <body>
     <header>
-      <button id="poga1">meklēšana</button>
-      <p id="nosaukums">AUTONOMA</p>
-      <button id="poga1">rezervācija</button>
+      <button class="headerButton" href="#">auto klāsts</button>
+      <div id="company">
+        <a id="companyTitle" href="">NOMAUTO</a>
+        <a id="aboutUs" href="about">par mums</a>
+      </div>
+      <button class="headerButton">nomas punkti</button>
     </header>
-    <div id="teksts1">
-      <p>
-        Jānis Bērziņš Rez. Nr. 00000000 <br />
-        Nomas punkts: PeterAuto <br />
-        Marka: BMW<br />
-        Modelis: 735 <br />
-        Gads: 2013 <br />
-        Sākums: 21.01.2019 9:00 <br />
-        Beigas: 22.01.2019 21:00<br />
-        Cena: 200 euro
-      </p>
-    </div>
-    <div id="buttons">
-      <button class="atcelt">atcelt</button>
-      <button class="labot">labot</button>
-      <button class="drukat">drukāt</button>
-    </div>
-    <div id="greenthingy">
-      <div id="photo">
-        <img src="../../static/img/foto4.jpg" width="380px" height="250px" />
+    <div id="middle">
+      <div id="left">
+        <h2>Rezervācijas rekvizīti</h2>
+        <div id="contentTable">
+          <table>
+            <tbody>
+              <tr>
+                <th id="nameSurname">Jānis Bērziņš</th>
+                <th id="reservationNum">00000000</th>
+              </tr>
+              <tr>
+                <th>Nomas punkts</th>
+                <td id="rentPoint">PeterAuto</td>
+              </tr>
+              <tr>
+                <th>Marka</th>
+                <td id="carBrand">BMW</td>
+              </tr>
+              <tr>
+                <th>Modelis</th>
+                <td id="model">735</td>
+              </tr>
+              <tr>
+                <th>Gads</th>
+                <td id="year">2013</td>
+              </tr>
+              <tr>
+                <th>Sākums</th>
+                <td id="rentStart">XX.XX.XXXX. X:XX</td>
+              </tr>
+              <tr>
+                <th>Beigas</th>
+                <td id="rentEnd">XX.XX.XXXX. X:XX</td>
+              </tr>
+              <tr>
+                <th>Cena</th>
+                <td id="price">X euro</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="buttons">
+          <button id="cancel">atcelt</button>
+          <button id="edit">rediģēt</button>
+          <button id="print">drukāt</button>
+        </div>
+      </div>
+      <div id="right">
+        <div id="imageHolder">
+          <img src="../static/img/foto3.jpg" />
+        </div>
       </div>
     </div>
   </body>
