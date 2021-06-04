@@ -1,37 +1,51 @@
-<!DOCTYPE html>
 <html lang="lv">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Par mums - NOMAUTO</title>
-    <link rel="stylesheet" href="../../static/css/aboutUs.css" />
+    <link rel="stylesheet" href="../static/css/aboutUs.css" />
   </head>
   <body>
     <header>
-      <div id="galvene">
-        <button id="poga1">meklēšana</button>
-        <p id="nosaukums">AUTONOMA</p>
-        <button id="poga1">rezervācija</button>
+      <button class="headerButton" href="#">meklēšana</button>
+      <div id="company">
+        <a id="companyTitle" href="#">NOMAUTO</a>
+        <a id="aboutUs" href="about">par mums</a>
       </div>
+      <button class="headerButton">rezervācija</button>
     </header>
-      <section>
+    <div id="greenBackground"></div>
+    <div id="middle" style="">
+      <div id="kreisais">
         <div id="mape">
-          <img src="../../static/img/aboutus-map.png" width="400px" height="360px">
+          <img
+            src="../static/img/aboutus-map.png"
+            width="400px"
+            height="360px"
+          />
         </div>
-        <p id="atrasanas-vieta">Atrašanās vieta</p>
-        <p id="adrese">Brīvības gatve 190, Rīga, Latvija</p>
-        <p id="post-code">LV-2110</p>
-      </section>
-      <aside>
-        <div>
-          <p id="teksts">Suspendisse fringilla in nulla in tincidunt. Maecenas tellus libero, convallis vel urna vel, sollicitudin auctor tellus. Duis dignissim, erat ac sollicitudin ornare.</p>
+        <div id="adrese">
+          <h2 class="adreseh2">Atrašanās vieta</h2>
+          <p class="adresep">Brīvības gatve 190, Rīga, Latvija</p>
+          <p class="adresep">LV-2110</p>
         </div>
-        <div id="info">
-          <p id="kontakti">Kontakti</p>
-          <p id="epasts">E-pasts: info@nomauto.lv</p>
-          <p id="tel-nr">Tel. nr.: +371 67977313</p>
-          <p id="fakss">Fakss: +371 67977941</p>
+      </div>
+      <div id="labais">
+        <div id="mazsInfo">
+          <p id="teksts">
+            Suspendisse fringilla in nulla in tincidunt. Maecenas tellus libero,
+            convallis vel urna vel, sollicitudin auctor tellus. Duis dignissim,
+            erat ac sollicitudin ornare.
+          </p>
         </div>
-      </aside>
+        <div id="kontakti">
+          <h2 class="kontaktih2">Kontakti</h2>
+          <p class="kontaktip">E-pasts: info@nomauto.lv</p>
+          <p class="kontaktip">Tel. nr.: +371 67977313</p>
+          <p class="kontaktip">Fakss: +371 67977941</p>
+        </div>
+      </div>
+    </div>
   </body>
+</html>

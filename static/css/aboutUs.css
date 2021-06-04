@@ -1,54 +1,74 @@
-html {
-  width: 100%;
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 header {
-  background-color: #004f2d;
-  height: 300px;
-  background-position: 0%;
-  padding: 10px;
-}
-
-#galvene {
   display: flex;
+  font-family: "Josefin Sans";
+  margin-bottom: 50px;
+  position: fixed;
   justify-content: center;
   width: 100%;
 }
 
-#nosaukums {
-  position: relative;
+.headerButton {
+  border: none;
   font-family: "Josefin Sans";
-  color: white;
-  font-weight: 700px;
-  font-size: 36px;
-  line-height: 55px;
-  margin: 0px;
+  background: none;
+  font-size: 24px;
+  letter-spacing: 7px;
+  cursor: pointer;
+  font-weight: 300;
+  color: #ffffff;
 }
 
-#poga1 {
-  position: relative;
-  font-family: "Josefin Sans";
-  color: white;
-  font-weight: 100;
-  font-size: 22px;
-  line-height: 36px;
-  letter-spacing: 0.185cm;
-  margin: 0px 30px;
-  height: 50px;
-  background: transparent;
-  border: 0px;
+div#company {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 50px;
+}
+
+#companyTitle {
+  font-size: 35px;
+  font-weight: 1000;
+  color: #ffffff;
+}
+
+a#companyTitle,
+a#aboutUs {
+  text-decoration: none;
+}
+
+a#aboutUs {
+  font-size: 20px;
+  background: #ffffff;
+  color: #0e402d;
+  padding: 10px 5px 5px;
+}
+
+#greenBackground {
+  z-index: -1;
+  position: fixed;
+  width: 100%;
+  background-color: #0e402d;
+  height: 400px;
 }
 
 section {
   float: left;
   width: 30%;
   height: 300px;
+  margin-top: 340px;
 }
 
 #mape {
   display: inline-block;
-  margin-top: -30%;
-  padding-left: 10%;
 }
 
 #atrasanas-vieta {
@@ -60,10 +80,8 @@ section {
 }
 
 #adrese {
-  margin-top: 1%;
-  font-size: 18px;
-  padding-left: 10%;
-  height: 8px;
+  font-family: "Red Hat Display";
+  margin: 0;
 }
 
 #post-code {
@@ -78,27 +96,22 @@ aside {
 }
 
 #teksts {
-  margin-top: -10%;
   background-color: #007643;
-  top: 1%;
   padding: 25px;
   color: white;
-  background-color: #007643;
-  font-size: 24px;
-  width: 360px;
-  height: 140px;
-  font-size: 24px;
-  margin-left: 300px;
+  font-size: 30px;
+  width: 500px;
+  font-family: "Red Hat Display";
 }
 
 #info {
-  margin-left: 700px;
-  margin-top: 100px;
+  margin-left: 400px;
+  margin-top: 50px;
 }
 
 #kontakti {
-  text-decoration: underline;
-  font-size: 24px;
+  font-family: "Red Hat Display";
+  align-self: flex-end;
 }
 
 #epasts {
@@ -114,4 +127,37 @@ aside {
 #fakss {
   font-size: 18px;
   margin-top: -1%;
+}
+
+#middle {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 200px;
+  position: fixed;
+  width: 100%;
+}
+
+#adrese p,
+#kontakti p {
+  margin: 0;
+  font-size: 22px;
+}
+
+#adrese h2,
+#kontakti h2 {
+  font-weight: 300;
+  text-decoration: underline;
+  letter-spacing: 5px;
+  font-size: 28px;
+  margin: 0 0 10px 0;
+}
+
+div#mazsInfo {
+  height: 360px;
+}
+
+#labais,
+#kreisais {
+  display: flex;
+  flex-direction: column;
 }
