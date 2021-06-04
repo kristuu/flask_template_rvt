@@ -1,62 +1,65 @@
-@font-face {
-  font-family: Cabin;
-  src: url("/fonts/cabin.ttf");
-}
-@font-face {
-  font-family: Josefin Sans;
-  src: url("/fonts/josefinsans.ttf");
-}
-@font-face {
-  font-family: Rubik;
-  src: url("/fonts/rubik.ttf");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
 }
 
 header {
   display: flex;
+  font-family: "Josefin Sans";
+  margin-bottom: 50px;
+  color: #0e402d;
   justify-content: center;
-  width: 100%;
-  margin: 1em 0 3em 0;
 }
 
-#poga1 {
-  position: relative;
+.headerButton {
+  border: none;
   font-family: "Josefin Sans";
-  color: #0e402d;
+  background: none;
+  font-size: 24px;
+  letter-spacing: 7px;
+  cursor: pointer;
   font-weight: 300;
-  font-size: 22px;
-  line-height: 36px;
-  letter-spacing: 0.185cm;
-  margin: 0px 30px;
-  height: 50px;
-  background: transparent;
-  border: 0px;
 }
 
-#nosaukums {
-  position: relative;
-  font-family: "Josefin Sans";
+div#company {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 50px;
+}
+
+#companyTitle {
+  font-size: 35px;
+  font-weight: 1000;
+}
+
+a#companyTitle,
+a#aboutUs {
+  text-decoration: none;
   color: #0e402d;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 55px;
-  margin: 0px;
 }
 
-#cukurins {
-  height: 15%;
-  text-align: center;
-  margin: 40px 0 125px 0;
+a#aboutUs {
+  font-size: 20px;
+  background: #0e402d;
+  color: #ffffff;
+  padding: 10px 5px 5px;
 }
 
-#attels {
-  border-radius: 200px;
-  opacity: 0.85;
+div#cukurins {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 
 #footerhp {
   align-items: center;
   justify-content: center;
-  font-family: Rubik;
 }
 
 #mekpecrek {
@@ -78,15 +81,15 @@ header {
 #mekpecrekvirsraksts {
   padding: 25px 0 50px 0;
   color: #ffffff;
-  font-weight: 500;
-  font-size: 30px;
+  font-weight: 600;
+  font-size: 33px;
+  font-family: "Red Hat Display";
   align-items: center;
 }
 
 #meklesanarek {
   width: 35%;
-  height: 35px;
-  border: none;
+  height: 37px;
   padding-left: 15px;
   padding-right: 10px;
   margin-right: 0.3em;
@@ -95,7 +98,6 @@ header {
 #izvelerek {
   width: 15%;
   height: 37px;
-  border: none;
   padding-left: 15px;
   padding-right: 10px;
   margin-right: 0.5em;
@@ -104,6 +106,8 @@ header {
 #meklesanarek,
 #izvelerek {
   font-family: Rubik;
+  border: none;
+  border-radius: 10px;
 }
 
 #meklesanarek:focus,
@@ -116,7 +120,17 @@ header {
   outline: none;
   border: none;
   height: 37px;
-  width: 200px;
+  width: 150px;
+  border-radius: 20px;
+  margin-left: 30px;
   font-family: Rubik;
   font-size: 20px;
+}
+
+p.meklp {
+  margin: 0 10px 0 0;
+  font-size: 20px;
+  font-family: "Red Hat Display";
+  color: #fff;
+  font-weight: 600;
 }
