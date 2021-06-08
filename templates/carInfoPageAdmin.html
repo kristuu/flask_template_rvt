@@ -4,99 +4,70 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mercedes Benz XYZ - NOMAUTO - Administrācija</title>
-    <link rel="stylesheet" href="../../static/css/carInfoPageAdmin.css" />
+    <title>Mercedes Benz XYZ - NOMAUTO</title>
+    <link rel="stylesheet" href="../static/css/carInfoPage.css" />
   </head>
   <body>
     <header>
-      <button id="poga1">meklēšana</button>
-      <div id="p">
-        <p id="nosaukums">NOMAUTO</p>
-        <p id="nosaukums2">Administration mode</p>
+      <button class="headerButton" href="#">auto klāsts</button>
+      <div id="company">
+        <a id="companyTitle" href="">NOMAUTO</a>
+        <a id="aboutUs" href="about">par mums</a>
       </div>
-      <button type="submit" id="poga1">rezervācija</button>
+      <button class="headerButton" href="#">nomas punkti</button>
     </header>
-    <section>
-      <div id="teksts">
-        <h1 id="carName">Etiam nisi erat</h1>
-        <p id="carDescription">
-          Etiam nisi erat, blandit in lectus ut, consequat tincidunt tellus.
-          Suspendisse hendrerit eleifend ex quis rutrum. Aliquam accumsan lorem
-          ut est lacinia, ac vestibulum risus rutrum. Suspendisse commodo
-          aliquet congue. Praesent eros justo, dignissim posuere cursus in,
-          pretium maximus erat. Proin ut eros turpis. Nam luctus, dui a
-          tincidunt sagittis, dolor quam porta ligula, id semper nisi turpis eu
-          quam.
-        </p>
-        <div id="buttons">
-          <button id="deleteButton">dzēst</button>
-          <button id="editButton">rediģēt</button>
+    <div id="middle">
+      <section>
+        <div id="teksts">
+          <h1>Etiam nisi erat</h1>
+          <p>
+            Etiam nisi erat, blandit in lectus ut, consequat tincidunt tellus.
+            Suspendisse hendrerit eleifend ex quis rutrum. Aliquam accumsan
+            lorem ut est lacinia, ac vestibulum risus rutrum. Suspendisse
+            commodo aliquet congue. Praesent eros justo, dignissim posuere
+            cursus in, pretium maximus erat. Proin ut eros turpis. Nam luctus,
+            dui a tincidunt sagittis, dolor quam porta ligula, id semper nisi
+            turpis eu quam.
+          </p>
+          <h2>Detaļas</h2>
+          <div id="contentTable">
+            <table>
+              <tbody>
+                <tr>
+                  <th>Nomas punkts</th>
+                  <td id="rentPoint">PeterAuto</td>
+                </tr>
+                <tr>
+                  <th>Marka</th>
+                  <td id="carBrand">Mercedes Benz</td>
+                </tr>
+                <tr>
+                  <th>Modelis</th>
+                  <td id="model">XYZ</td>
+                </tr>
+                <tr>
+                  <th>Gads</th>
+                  <td id="year">XYZW</td>
+                </tr>
+                <tr>
+                  <th>Cena (€ / viena pilna diena)</th>
+                  <td id="price">€ XY,-</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
-      </div>
-    </section>
-    <aside>
-      <div id="attels">
-        <img
-          src="../../static/img/reservation-page-foto.png"
-          width="640px"
-          height="500px"
-        />
-      </div>
-    </aside>
-    <div id="overlay">
-      <div id="popUp">
-        <div id="editor">
-          <h2>Info redaktors</h2>
-          <form id="info">
-            <div id="marka" class="smallInputDiv">
-              <p>MARKA</p>
-              <input
-                id="markaInput"
-                class="smallInput"
-                type="text"
-                maxlength="20"
-                placeholder="Max. 20 rakstzīmes"
-              />
-            </div>
-            <div id="year" class="smallInputDiv">
-              <p>GADS</p>
-              <input
-                id="yearInput"
-                class="smallInput"
-                type="text"
-                maxlength="4"
-                placeholder="Max. 4 rakstzīmes"
-              />
-            </div>
-            <div id="model" class="smallInputDiv">
-              <p>MODELIS</p>
-              <input
-                id="modelInput"
-                class="smallInput"
-                type="text"
-                maxlength="30"
-                placeholder="Max. 30 rakstzīmes"
-              />
-            </div>
-            <div id="price" class="smallInputDiv">
-              <p>CENA (€/pilna diena)</p>
-              <input
-                id="priceInput"
-                class="smallInput"
-                type="number"
-                maxlength="20"
-                placeholder="Max. 20 rakstzīmes"
-              />
-            </div>
-            <div id="description" class="largeInputDiv">
-              <p>APRAKSTS</p>
-              <textarea id="descriptionInput" class="largeInput"></textarea>
-            </div>
-          </form>
-          <button id="login" type="submit">saglabāt</button>
+        <button id="reservation-button">rezervēt</button>
+      </section>
+      <aside>
+        <div id="attels">
+          <img
+            src="../static/img/reservation-page-foto.png"
+            width="640px"
+            height="500px"
+          />
         </div>
-        <div id="greenShadow"></div>
-      </div>
+      </aside>
     </div>
   </body>
 </html>
