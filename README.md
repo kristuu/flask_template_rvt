@@ -7,3 +7,6 @@ DP1-1 grupas audzēkņi
 
 ## Figma:
 https://www.figma.com/file/EwCTfTfSEVFF0ac1U1N59U/NOMAUTO?node-id=0%3A1
+
+## Pirmā repozitorija:
+https://github.com/KatrinaGandzjuka/NOMAUTO.git
