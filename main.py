@@ -7,15 +7,15 @@ def index():
   return render_template("index.html")
 
 
-@app.route('/about')
+@app.route('/aboutUs')
 def aboutUs():
   return render_template("aboutUs.html")
 
-@app.route('/nomas_punkti')
+@app.route('/nomasPunktuSaraksts')
 def rentPointList():
   return render_template("reservationRedirect.html")
   
-@app.route('/mercedes_benz_XYZ')
+@app.route('/mercedesBenzXYZ')
 def carInfo():
   return render_template("carInfoPage.html")
   
@@ -27,7 +27,7 @@ def carReservation():
 def rentPoint():
   return render_template("rentPointPage.html")
 
-@app.route('/nomas_punkts_XYZ_admin')
+@app.route('/nomasPunktsXYZAdmin')
 def rentPointAdmin():
   return render_template("rentPointPageAdmin.html")
   
@@ -39,7 +39,7 @@ def searchResults():
 def adminAuthorisation():
   return render_template("adminLogin.html")
   
-@app.route('/example_mercedes_benz_XYZ_admin')
+@app.route('/exampleMercedesBenzXYZAdmin')
 def carInfoAdmin():
   return render_template("carInfoPageAdmin.html")
 

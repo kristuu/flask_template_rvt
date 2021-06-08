@@ -10,3 +10,6 @@ https://www.figma.com/file/EwCTfTfSEVFF0ac1U1N59U/NOMAUTO?node-id=0%3A1
 
 ## Pirmā repozitorija:
 https://github.com/KatrinaGandzjuka/NOMAUTO.git
+
+## replit.com
+https://replit.com/@DP1KABerzins/flasktemplatervt
