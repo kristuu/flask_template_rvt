@@ -26,6 +26,10 @@ def carReservation():
 @app.route('/nomas_punkts_XYZ')
 def rentPoint():
   return render_template("rentPointPage.html")
+
+@app.route('/nomas_punkts_XYZ_admin')
+def rentPointAdmin():
+  return render_template("rentPointPageAdmin.html")
   
 @app.route('/search=XYZ')
 def searchResults():
