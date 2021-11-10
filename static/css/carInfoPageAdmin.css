@@ -10,8 +10,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  display: flex;
   overflow: hidden;
+  display: flex;
   flex-direction: column;
 }
 
@@ -59,6 +59,14 @@ a#aboutUs {
   background: #0e402d;
   color: #ffffff;
   padding: 10px 5px 5px;
+}
+
+h1 {
+  font-size: 33px;
+  font-family: "Red Hat Display";
+  font-weight: 350;
+  letter-spacing: 5px;
+  margin: 0;
 }
 
 #teksts {
@@ -114,22 +122,15 @@ img {
   text-align: center;
 }
 
-h2#popUpH2 {
+h2 {
+  font-weight: 800;
   font-size: 28px;
-  letter-spacing: 5px;
-  font-family: "Red Hat Display";
-  align-self: center;
   color: #ffffff;
+  letter-spacing: 2px;
+  font-family: 'Red Hat Display';
 }
 
-h2#detailsH2 {
-  margin-top: 75px;
-  font-weight: 300;
-  font-size: 28px;
-  letter-spacing: 5px;
-}
-
-p#description {
+p {
   padding-left: 50px;
   font-size: 18px;
 }
@@ -169,95 +170,22 @@ h1 {
   margin: 0;
 }
 
-#overlay {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  z-index: 1;
-  background-color: rgba(0, 0, 0, 0.6);
-  left: 0;
-  top: 0;
+#green-box {
+  background-color: #004F2D;
   display: flex;
   justify-content: center;
+  margin: auto;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-#popUp {
-  margin: auto 25%;
-  display: flex;
-  opacity: 100%;
-  background-color: #004f2d;
-}
-
-#editor {
+#overlay {
+  z-index: 2;
+  background-color: rgb(0, 0, 0, 0.7);
+  position: absolute;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-
-#greenShadow {
-  width: 25px;
-  background-color: #006f3f;
-}
-
-form {
-  display: flex;
-  flex: 25%;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: space-evenly;
-}
-
-#info p {
-  color: #ffffff;
-  margin: 0;
-  font-family: "Rubik";
-}
-
-.smallInput {
-  width: 350px;
-  height: 35px;
-  border-radius: 10px;
-  padding: 0 10px;
-  border: none;
-}
-
-.largeInput {
-  width: 780px;
-  height: 178px;
-  padding: 0 10px;
-  border-radius: 10px;
-  border: none;
-}
-
-.smallInput:focus,
-.largeInput:focus {
-  outline: none;
-}
-
-.smallInputDiv,
-.largeInputDiv {
-  padding: 0 0 5px 0;
-}
-
-.largeInput {
-  padding: 10px;
-}
-
-.smallInput,
-.largeInput {
-  font-family: "Rubik";
-}
-
-#save {
-  width: 200px;
-  height: 50px;
-  border: none;
-  font-family: Josefin Sans;
-  font-size: 28px;
-  font-weight: 300;
-  margin: 15px 0 30px;
-  background-color: #e0dddd;
-  opacity: 80%;
-  border-radius: 10px;
 }
