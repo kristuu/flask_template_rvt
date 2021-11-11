@@ -10,8 +10,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  overflow: hidden;
   display: flex;
+  overflow: hidden;
   flex-direction: column;
 }
 
@@ -123,11 +123,10 @@ img {
 }
 
 h2 {
-  font-weight: 800;
+  margin-top: 75px;
+  font-weight: 300;
   font-size: 28px;
-  color: #ffffff;
-  letter-spacing: 2px;
-  font-family: 'Red Hat Display';
+  letter-spacing: 5px;
 }
 
 p {
