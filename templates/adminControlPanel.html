@@ -1,0 +1,227 @@
+<html lang="en">
+	<head></head>
+	<body style="">
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Auto noma - NOMAUTO</title>
+		<link rel="stylesheet" href="../static/css/adminControlPanel.css" />
+
+		<header>
+			<button class="headerButton" href="#">auto klāsts</button>
+			<div id="company">
+				<a id="companyTitle" href="#">NOMAUTO</a>
+				<a id="aboutUs" href="#">administratora panelis</a>
+			</div>
+			<button class="headerButton" href="#">nomas punkti</button>
+		</header>
+		<div id="adminReservationPointsDiv">
+			<h1 class="adminHeading1">Nomas punkti</h1>
+			<div id="adminCurrentReservationPoints">
+				<div id="adminReservationPoint1" class="adminReservationPoint">
+					<div class="adminReservationPointNameDiv">
+						<input
+							id="aRPName1"
+							class="adminReservationPointName"
+							value="Brīvības gatve 290, Rīga"
+						/>
+					</div>
+					<button
+						id="adminReservationPoint1Edit"
+						class="adminReservationPointSaveButton"
+					>
+						saglabāt
+					</button>
+					<button
+						id="adminReservationPoint1Delete"
+						class="adminReservationPointDeleteButton"
+					>
+						dzēst
+					</button>
+				</div>
+				<div id="adminReservationPoint2" class="adminReservationPoint">
+					<div class="adminReservationPointNameDiv">
+						<div class="adminReservationPointNameDiv">
+							<input
+								id="aRPName2"
+								class="adminReservationPointName"
+								value="Tērbatas iela 13, Rīga"
+							/>
+						</div>
+					</div>
+					<button
+						id="adminReservationPoint2Edit"
+						class="adminReservationPointSaveButton"
+					>
+						saglabāt
+					</button>
+					<button
+						id="adminReservationPoint2Delete"
+						class="adminReservationPointDeleteButton"
+					>
+						dzēst
+					</button>
+				</div>
+				<div id="adminReservationPoint3" class="adminReservationPoint">
+					<div class="adminReservationPointNameDiv">
+						<input
+							id="aRPName3"
+							class="adminReservationPointName"
+							value="Mazā stacijas iela 9B, Dzintari"
+						/>
+					</div>
+					<button
+						id="adminReservationPoint3Edit"
+						class="adminReservationPointSaveButton"
+					>
+						saglabāt
+					</button>
+					<button
+						id="adminReservationPoint3Delete"
+						class="adminReservationPointDeleteButton"
+					>
+						dzēst
+					</button>
+				</div>
+			</div>
+			<div id="adminReservationPointAddDiv">
+				<input id="adminReservationPointAddName" type="text" maxlength="100" />
+				<button
+					id="adminReservationPointAddButton"
+					class="adminReservationPointAddButton"
+				>
+					pievienot
+				</button>
+			</div>
+			<div id="adminReservationPointEditor"></div>
+		</div>
+		<div id="adminCarsDiv" style="margin-bottom: 25px">
+			<h1 class="adminHeading1">Automašīnas</h1>
+			<div id="adminRPointChoiceDiv">
+				<p
+					style="
+						margin: 0;
+						margin-right: 10px;
+						margin-left: 20px;
+						color: #fff;
+						font-size: 18px;
+						font-weight: 500;
+						letter-spacing: 0.5px;
+					"
+				>
+					Nomas punkts:
+				</p>
+				<select id="adminRPointChoice">
+					<option id="adminRPointChoice1">Brīvības gatve 290, Rīga</option>
+					<option id="adminRPointChoice1">Tērbatas iela 13, Rīga</option>
+					<option id="adminRPointChoice1">
+						Mazā stacijas iela 9B, Dzintari
+					</option>
+				</select>
+			</div>
+			<div id="adminRPointCar1">
+				<img class="adminRPointCarImg" src="../static/img/foto3.jpg" />
+				<div id="adminRPointCarDetails">
+					<div id="adminRPointCarFirm" class="adminRPointCarDetailsDiv">
+						<p class="adminRPointCarDetailsP">Marka</p>
+						<input
+							id="adminRPointCarFirmInput"
+							value="BMW"
+							maxlength="35"
+							class="adminRPointCarDetailsInput"
+						/>
+					</div>
+					<div id="adminRPointCarModel" class="adminRPointCarDetailsDiv">
+						<p class="adminRPointCarDetailsP">Modelis</p>
+						<input
+							id="adminRPointCarModelInput"
+							value="X7"
+							maxlength="35"
+							class="adminRPointCarDetailsInput"
+						/>
+					</div>
+					<div id="adminRPointCarYear" class="adminRPointCarDetailsDiv">
+						<p class="adminRPointCarDetailsP">Gads</p>
+						<input
+							id="adminRPointCarYearInput"
+							value="2021"
+							maxlength="35"
+							class="adminRPointCarDetailsInput"
+						/>
+					</div>
+					<div id="adminRPointCarPricePerDay" class="adminRPointCarDetailsDiv">
+						<p class="adminRPointCarDetailsP" style="">Cena (€/par dienu)</p>
+						<input
+							id="adminRPointCarPricePerDayInput"
+							value="200"
+							maxlength="35"
+							class="adminRPointCarDetailsInput"
+						/>
+					</div>
+					<button
+						id="adminRPointCar1Edit"
+						class="adminReservationPointSaveButton"
+						style="margin-left: 320px"
+					>
+						saglabāt
+					</button>
+					<button
+						id="adminRPointCar1Delete"
+						class="adminReservationPointDeleteButton"
+					>
+						dzēst
+					</button>
+				</div>
+			</div>
+		</div>
+		<div id="adminReservationsDiv">
+			<h1 class="adminHeading1">Rezervācijas</h1>
+			<div id="adminRes1Div">
+				<div id="adminRes1">
+					<div id="adminResEmail" style="margin: 10px; margin-left: 40px">
+						<p id="adminResP">E-Pasts</p>
+						<input id="adminResEmailInput" value="berzinsjanis2459@inbox.lv" />
+					</div>
+					<div id="adminResName" style="margin: 10px">
+						<p id="adminResP">Vārds</p>
+						<input id="adminResNameInput" value="Jānis" />
+					</div>
+					<div id="adminResSurname" style="margin: 10px">
+						<p id="adminResP">Uzvārds</p>
+						<input id="adminResSurnameInput" value="Bērziņš" />
+					</div>
+					<div id="adminResNum" style="margin: 10px">
+						<p id="adminResP">Rezervācijas nr.</p>
+						<p id="adminResNumP" style="margin: 0">00000000</p>
+					</div>
+					<div id="adminResCarFirm" style="margin: 10px">
+						<p id="adminResP">Marka</p>
+						<p id="adminResCarFirmP" style="margin: 0">BMW</p>
+					</div>
+					<div id="adminResCarModel" style="margin: 10px">
+						<p id="adminResP">Modelis</p>
+						<p id="adminResCarModelP" style="margin: 0">X7</p>
+					</div>
+					<div id="adminResCarYear" style="margin: 10px">
+						<p id="adminResP">Gads</p>
+						<p id="adminResCarYearP" style="margin: 0">2021</p>
+					</div>
+					<div id="adminResStart" style="margin: 10px">
+						<p id="adminResP">Sākuma laiks</p>
+						<input id="adminResStartInput" type="datetime-local" />
+					</div>
+					<div id="adminResEnd" style="margin: 10px">
+						<p id="adminResP">Beigu laiks</p>
+						<input id="adminResEndInput" type="datetime-local" />
+					</div>
+				</div>
+				<button id="adminRes1Edit" class="adminReservationPointSaveButton">
+					saglabāt
+				</button>
+				<button id="adminRes1Delete" class="adminReservationPointDeleteButton">
+					dzēst
+				</button>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Rubik";
+	flex-direction: column;
+}
+
+header {
+	display: flex;
+	font-family: "Josefin Sans";
+	margin-bottom: 50px;
+	color: #0e402d;
+	justify-content: center;
+	align-items: center;
+}
+
+.headerButton {
+	height: 60px;
+	width: 175px;
+	border: none;
+	font-family: "Josefin Sans";
+	background: none;
+	font-size: 24px;
+	letter-spacing: 7px;
+	cursor: pointer;
+	font-weight: 300;
+}
+
+div#company {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 20px 50px;
+}
+
+#companyTitle {
+	font-size: 35px;
+	font-weight: 1000;
+}
+
+a#companyTitle,
+a#aboutUs {
+	text-decoration: none;
+	color: #0e402d;
+}
+
+a#aboutUs {
+	font-size: 20px;
+	background: #0e402d;
+	color: #ffffff;
+	padding: 10px 5px 5px;
+}
+
+h1 {
+	font-family: "Red Hat Display";
+	font-size: 30px;
+	font-weight: 800;
+	background: #007643;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	color: #fff;
+	margin: 0;
+	letter-spacing: 1.5px;
+}
+
+div#adminReservationPointsDiv {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 25px;
+}
+
+div#adminCurrentReservationPoints {
+	display: flex;
+	flex-direction: column;
+}
+
+.adminReservationPoint {
+	background: #abc4ab;
+	display: flex;
+	height: 50px;
+	align-items: center;
+}
+
+.adminReservationPointName {
+	margin: 10px;
+	margin-left: 25px;
+	font-size: 18px;
+	font-family: "Rubik";
+	width: 996px;
+	background: #e0dddd;
+	border-radius: 10px;
+}
+
+.adminReservationPointNameDiv {
+	margin-right: auto;
+}
+
+.adminReservationPointDeleteButton {
+	margin-right: 15px;
+	height: 35px;
+	width: 100px;
+	font-family: "Red Hat Display";
+	font-size: 16px;
+	border: none;
+}
+
+.adminReservationPointSaveButton {
+	margin-right: 10px;
+	width: 100px;
+	height: 35px;
+	font-family: "Red Hat Display";
+	font-size: 16px;
+	border: none;
+	margin-left: auto;
+}
+
+.adminReservationPointAddButton {
+	width: 100px;
+	height: 35px;
+	font-family: "Red Hat Display";
+	font-size: 16px;
+	margin-right: 15px;
+	border: none;
+}
+
+div#adminReservationPointAddDiv {
+	height: 50px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background: #0e402d;
+}
+
+input#adminReservationPointAddName {
+	margin-right: auto;
+	margin-left: 20px;
+	width: 1000px;
+	height: 20px;
+	border-radius: 10px;
+	font-family: "Rubik";
+	font-size: 14px;
+	border: none;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+div#adminRPointChoiceDiv {
+	display: flex;
+	height: 50px;
+	align-items: center;
+	background: #0e402d;
+}
+
+select#adminRPointChoice {
+	width: 900px;
+	height: 35px;
+	border: none;
+	border-radius: 10px;
+	background: #e0dddd;
+	padding-left: 5px;
+	font-size: 14px;
+	font-family: "Rubik";
+}
+
+select:focus-visible {
+	border: none;
+	outline: none;
+}
+
+.adminRPointCarImg {
+	max-width: 175px;
+}
+
+div#adminRPointCar1 {
+	display: flex;
+	height: 100px;
+}
+
+div#adminRPointCarDetails {
+	display: flex;
+	align-items: center;
+	background: #abc4ab;
+}
+
+.adminRPointCarDetailsDiv {
+	margin-left: 50px;
+	text-align-last: center;
+	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+adminRPointCarDetailsP {
+	margin: 0;
+}
+
+.adminRPointCarDetailsP {
+	margin: 0;
+	font-weight: 700;
+	font-size: 18px;
+}
+
+.adminRPointCarDetailsInput {
+	background: #e0dddd;
+	border-radius: 10px;
+	width: 250px;
+	height: 30px;
+	font-size: 16px;
+	font-family: "Rubik";
+}
+
+div#adminReservationsDiv {
+	display: flex;
+	flex-direction: column;
+}
+
+div#adminRes1 {
+	display: flex;
+	text-align-last: center;
+	height: 70px;
+	align-items: center;
+}
+
+#adminResP {
+	font-weight: 700;
+	font-size: 18px;
+	margin: 0;
+}
+
+div#adminRes1Div {
+	display: flex;
+	flex-direction: row;
+	background: #abc4ab;
+	align-items: center;
+}
