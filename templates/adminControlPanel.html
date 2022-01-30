@@ -18,36 +18,37 @@
 		<div id="adminReservationPointsDiv">
 			<h1 class="adminHeading1">Nomas punkti</h1>
 			<div id="adminCurrentReservationPoints">
-				{% for rentPoint in rentPoints %}
+				{% for rentPoint in rentPointList %}
         <div id="rentPoint{{ rentPoint.id }}" class="adminReservationPoint">
 					<div class="adminReservationPointNameDiv">
-						<input
+            <form action="/adminPage/editRentPoint/{{ rentPoint.id }}" method="POST">
+              <input
 							id="aRPName{{ rentPoint.id }}"
 							class="adminReservationPointName"
 							value="{{ rentPoint.name }}"
-						/>
+						  />
+              <a
+              href="/adminPage/editRentPoint/{{rentPoint.id}}"
+              class="adminReservationPointSaveButton"
+              >
+                saglabāt
+              </a>
+              <a
+                href="/adminPage/delRentPoint/{{rentPoint.id}}"
+                class="adminReservationPointDeleteButton"
+              >
+                dzēst
+              </a>
+            </form>
 					</div>
-					<button
-						id="adminReservationPoint{{ rentPoint.id }}Edit"
-						class="adminReservationPointSaveButton"
-					>
-						saglabāt
-					</button>
-					<button
-						id="adminReservationPoint{{ rentPoint.id }}Delete"
-						class="adminReservationPointDeleteButton"
-					>
-						dzēst
-					</button>
 				</div>
         {% endfor %}
       <div class="form" id="adminReservationPointAddDiv">
-        <form action="/admin/" method="POST">
-          <input type="text" name="aRPointContent" id="adminReservationPointAddName">
+        <form action="/adminPage" method="POST">
+          <input type="text" id="content" name="content">
           <input type="submit" value="pievienot" class="adminReservationPointAddButton">
         </form>
       </div>
-			<div id="adminReservationPointEditor"></div>
 		</div>
 		<div id="adminCarsDiv" style="margin-bottom: 25px">
 			<h1 class="adminHeading1">Automašīnas</h1>

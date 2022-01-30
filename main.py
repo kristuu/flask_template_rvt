@@ -13,7 +13,7 @@ class rentPoints(db.Model):
   dateCreated = db.Column(db.DateTime, default=datetime.utcnow)
 
   def __repr__(self):
-    return '<Rent point with id %r>' % self.id
+    return '<rent point with id %r>' % self.id
 
 class cars(db.Model):
   id = db.Column(db.Integer, primary_key=True)
@@ -25,7 +25,7 @@ class cars(db.Model):
   pricePerDay = db.Column(db.Float, nullable=False)
 
   def __repr__(self):
-    return '<Car with id %r>' % self.id
+    return '<car with id %r>' % self.id
 
 class reservations(db.Model):
   id = db.Column(db.Integer, primary_key=True)
@@ -37,24 +37,54 @@ class reservations(db.Model):
   endTime = db.Column(db.DateTime, default=datetime.utcnow)
 
   def __repr__(self):
-    return '<Reservation with id %r>' % self.id
+    return '<reservation with id %r>' % self.id
   
 
-@app.route('/admin/', methods=['POST', 'GET'])
-def adminControlPanel():
+@app.route('/')
+def index():
+  return render_template("index.html")
+
+@app.route('/adminPage', methods=['POST', 'GET'])
+def admin():
   if request.method == 'POST':
-    rentPointName = request.form['adminReservationPointAddName']
-    newRentPoint = rentPoints(name=rentPointName)
+    newRentPoint = rentPoints(name=request.form['content'])
 
     try:
       db.session.add(newRentPoint)
       db.session.commit()
-      return redirect('/admin/')
+      return redirect('/adminPage')
     except:
       return 'We ran into an issue while trying to add a rent point'
 
   else:
-    return render_template("adminControlPanel.html")
+    rentPointList = rentPoints.query.order_by(rentPoints.id).all()
+    return render_template("adminControlPanel.html", rentPointList=rentPointList)
+
+@app.route('/adminPage/delRentPoint/<int:id>')
+def delete(id):
+  rentPoint_to_delete = rentPoints.query.get_or_404(id)
+
+  try:
+    db.session.delete(rentPoint_to_delete)
+    db.session.commit()
+    return redirect('/adminPage')
+  except:
+    return 'There was a problem deleting that rent point'
+
+@app.route('/adminPage/editRentPoint/<int:id>', methods=['POST', 'GET'])
+def edit(id):
+  rentPoint = rentPoints.query.get_or_404(id)
+
+  if request.method == 'POST':
+    rentPoint.content = request.form['content']
+  
+    try:
+      db.session.commit()
+      return redirect('/adminPage')
+    except:
+      return 'There was an issue updating the rent point'
+  else:
+    return render_template("adminControlPanel.html", rentPoint=rentPoint)
 
 @app.route('/aboutUs')
 def aboutUs():
@@ -75,10 +105,6 @@ def carReservation():
 @app.route('/nomas_punkts_XYZ')
 def rentPoint():
   return render_template("rentPointPage.html")
-
-@app.route('/')
-def index():
-  return render_template("index.html")
   
 @app.route('/search')
 def searchResults():

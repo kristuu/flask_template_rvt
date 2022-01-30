@@ -84,6 +84,7 @@ div#adminCurrentReservationPoints {
 	display: flex;
 	height: 50px;
 	align-items: center;
+	justify-content: center;
 }
 
 .adminReservationPointName {
@@ -106,7 +107,13 @@ div#adminCurrentReservationPoints {
 	width: 100px;
 	font-family: "Red Hat Display";
 	font-size: 16px;
+	background: #E0DDDD;
 	border: none;
+	text-decoration: none;
+	color: 000000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .adminReservationPointSaveButton {
@@ -116,7 +123,13 @@ div#adminCurrentReservationPoints {
 	font-family: "Red Hat Display";
 	font-size: 16px;
 	border: none;
+	background: #E0DDDD;
 	margin-left: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	color: 000000;
 }
 
 .adminReservationPointAddButton {
@@ -237,4 +250,27 @@ div#adminRes1Div {
 	flex-direction: row;
 	background: #abc4ab;
 	align-items: center;
+}
+
+.adminReservationPointNameDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#reservationPointForm {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+form#editForm {
+    display: flex;
+    margin: 0;
+    align-items: center;
+}
+
+div#rentPointInput {
+    display: flex;
 }
