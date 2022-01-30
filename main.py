@@ -17,18 +17,44 @@ class rentPoints(db.Model):
 
 class cars(db.Model):
   id = db.Column(db.Integer, primary_key=True)
-  firm = db.Column(db.String, nullable=False)
-  model = db.Column(db.String, nullable=False)
-  year = db.Column(db.String, nullable=False)
-  pricePerDay = db.Column(db.String, nullable=False)
+  rentPointId = db.Column(db.Integer, nullable=False)
+  image = db.Column(db.String(999), nullable=False)
+  firm = db.Column(db.String(100), nullable=False)
+  model = db.Column(db.String(100), nullable=False)
+  year = db.Column(db.Integer, nullable=False)
+  pricePerDay = db.Column(db.Float, nullable=False)
 
   def __repr__(self):
     return '<Car with id %r>' % self.id
+
+class reservations(db.Model):
+  id = db.Column(db.Integer, primary_key=True)
+  eMail = db.Column(db.String, nullable=False)
+  name = db.Column(db.String, nullable=False)
+  surname = db.Column(db.String, nullable=False)
+  carId = db.Column(db.Integer, nullable=False)
+  startTime = db.Column(db.DateTime, default=datetime.utcnow)
+  endTime = db.Column(db.DateTime, default=datetime.utcnow)
+
+  def __repr__(self):
+    return '<Reservation with id %r>' % self.id
   
 
-@app.route('/')
-def index():
-  return render_template("index.html")
+@app.route('/admin/', methods=['POST', 'GET'])
+def adminControlPanel():
+  if request.method == 'POST':
+    rentPointName = request.form['adminReservationPointAddName']
+    newRentPoint = rentPoints(name=rentPointName)
+
+    try:
+      db.session.add(newRentPoint)
+      db.session.commit()
+      return redirect('/admin/')
+    except:
+      return 'We ran into an issue while trying to add a rent point'
+
+  else:
+    return render_template("adminControlPanel.html")
 
 @app.route('/aboutUs')
 def aboutUs():
@@ -50,11 +76,11 @@ def carReservation():
 def rentPoint():
   return render_template("rentPointPage.html")
 
-@app.route('/nomasPunktsXYZAdmin')
-def rentPointAdmin():
-  return render_template("rentPointPageAdmin.html")
+@app.route('/')
+def index():
+  return render_template("index.html")
   
-@app.route('/search=XYZ')
+@app.route('/search')
 def searchResults():
   return render_template("searchResultPage.html")
   

@@ -18,81 +18,35 @@
 		<div id="adminReservationPointsDiv">
 			<h1 class="adminHeading1">Nomas punkti</h1>
 			<div id="adminCurrentReservationPoints">
-				<div id="adminReservationPoint1" class="adminReservationPoint">
+				{% for rentPoint in rentPoints %}
+        <div id="rentPoint{{ rentPoint.id }}" class="adminReservationPoint">
 					<div class="adminReservationPointNameDiv">
 						<input
-							id="aRPName1"
+							id="aRPName{{ rentPoint.id }}"
 							class="adminReservationPointName"
-							value="Brīvības gatve 290, Rīga"
+							value="{{ rentPoint.name }}"
 						/>
 					</div>
 					<button
-						id="adminReservationPoint1Edit"
+						id="adminReservationPoint{{ rentPoint.id }}Edit"
 						class="adminReservationPointSaveButton"
 					>
 						saglabāt
 					</button>
 					<button
-						id="adminReservationPoint1Delete"
+						id="adminReservationPoint{{ rentPoint.id }}Delete"
 						class="adminReservationPointDeleteButton"
 					>
 						dzēst
 					</button>
 				</div>
-				<div id="adminReservationPoint2" class="adminReservationPoint">
-					<div class="adminReservationPointNameDiv">
-						<div class="adminReservationPointNameDiv">
-							<input
-								id="aRPName2"
-								class="adminReservationPointName"
-								value="Tērbatas iela 13, Rīga"
-							/>
-						</div>
-					</div>
-					<button
-						id="adminReservationPoint2Edit"
-						class="adminReservationPointSaveButton"
-					>
-						saglabāt
-					</button>
-					<button
-						id="adminReservationPoint2Delete"
-						class="adminReservationPointDeleteButton"
-					>
-						dzēst
-					</button>
-				</div>
-				<div id="adminReservationPoint3" class="adminReservationPoint">
-					<div class="adminReservationPointNameDiv">
-						<input
-							id="aRPName3"
-							class="adminReservationPointName"
-							value="Mazā stacijas iela 9B, Dzintari"
-						/>
-					</div>
-					<button
-						id="adminReservationPoint3Edit"
-						class="adminReservationPointSaveButton"
-					>
-						saglabāt
-					</button>
-					<button
-						id="adminReservationPoint3Delete"
-						class="adminReservationPointDeleteButton"
-					>
-						dzēst
-					</button>
-				</div>
-			</div>
-			<div id="adminReservationPointAddDiv">
-				<input id="adminReservationPointAddName" type="text" maxlength="100" />
-				<button
-					id="adminReservationPointAddButton"
-					class="adminReservationPointAddButton"
-				>
-					pievienot
-				</button>
-			</div>
+        {% endfor %}
+      <div class="form" id="adminReservationPointAddDiv">
+        <form action="/admin/" method="POST">
+          <input type="text" name="aRPointContent" id="adminReservationPointAddName">
+          <input type="submit" value="pievienot" class="adminReservationPointAddButton">
+        </form>
+      </div>
 			<div id="adminReservationPointEditor"></div>
 		</div>
 		<div id="adminCarsDiv" style="margin-bottom: 25px">
