@@ -4,20 +4,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Auto noma - NOMAUTO</title>
-    <link rel="stylesheet" href="../static/css/index.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}" />
   </head>
   <body>
     <header>
       <button class="headerButton" href="#">auto klāsts</button>
       <div id="company">
         <a id="companyTitle" href="#">NOMAUTO</a>
-        <a id="aboutUs" href="about">par mums</a>
+        <a id="aboutUs" href="aboutUs">par mums</a>
       </div>
       <button class="headerButton" href="#">nomas punkti</button>
     </header>
     <div id="cukurins">
       <img
-        src="../static/img/cukurins.png"
+        src="../../static/img/cukurins.png"
         style="max-height: 450px; border-radius: 200px"
       />
     </div>
