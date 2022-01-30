@@ -13,9 +13,18 @@ class rentPoints(db.Model):
   dateCreated = db.Column(db.DateTime, default=datetime.utcnow)
 
   def __repr__(self):
-    return '<Task %r>' % self.id
+    return '<Rent point with id %r>' % self.id
 
-    
+class cars(db.Model):
+  id = db.Column(db.Integer, primary_key=True)
+  firm = db.Column(db.String, nullable=False)
+  model = db.Column(db.String, nullable=False)
+  year = db.Column(db.String, nullable=False)
+  pricePerDay = db.Column(db.String, nullable=False)
+
+  def __repr__(self):
+    return '<Car with id %r>' % self.id
+  
 
 @app.route('/')
 def index():
